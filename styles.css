@@ -15,18 +15,33 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .card {
   border: solid;
   box-sizing: border-box;
   padding: 10px 10px 10px 10px;
-  width: 350px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   padding: 20px;
- 
+  
+}
+
+.card--dark {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.card--light {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card__text {
+  font-size: 1em;
 }
