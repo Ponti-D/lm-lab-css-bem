@@ -1,6 +1,8 @@
 :root {
   --light: #fefefe;
   --dark: #272932;
+  --danger: #cb0a0a;
+  --safe: green;
 }
 
 .card__img {
@@ -29,7 +31,6 @@ body {
   align-items: center;
   border-radius: 10px;
   padding: 20px;
-  
 }
 
 .card--dark {
@@ -44,4 +45,23 @@ body {
 
 .card__text {
   font-size: 1em;
+}
+
+.button {
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.5em;
+  font-family: "Rubik", sans-serif;
+}
+
+.button-danger {
+  background: var(--danger);
+  color: var(--light);
+}
+
+.button-safe {
+  background: var(--safe);
+  color: var(--light);
 }
