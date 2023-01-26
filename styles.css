@@ -1,12 +1,16 @@
 :root {
-  --light: #fefefe;
+  --white: #fefefe;
   --dark: #272932;
-  --danger: #cb0a0a;
-  --safe: green;
+  --red: #cb0a0a;
+  --green: green;
+  --grey: #12121277;
+  --pink: #ffc0cb;
+  --light: #87ceeb;
 }
 
 .card__img {
   max-width: 200px;
+  max-height: 350px;
 }
 
 body {
@@ -21,12 +25,11 @@ body {
 }
 
 .card {
-  border: solid;
   box-sizing: border-box;
   padding: 10px 10px 10px 10px;
   width: 300px;
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -35,16 +38,24 @@ body {
 
 .card--dark {
   background-color: var(--dark);
-  color: var(--light);
+  color: var(--white);
+}
+.card--angry {
+  background-color: var(--grey);
+  color: var(--dark);
 }
 
+.card--happy {
+  background-color: var(--pink);
+  color: var(--dark);
+}
 .card--light {
   background-color: var(--light);
   color: var(--dark);
 }
 
 .card__text {
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 .button {
@@ -57,11 +68,11 @@ body {
 }
 
 .button-danger {
-  background: var(--danger);
-  color: var(--light);
+  background: var(--red);
+  color: var(--dark);
 }
 
 .button-safe {
-  background: var(--safe);
-  color: var(--light);
+  background: var(--green);
+  color: var(--white);
 }
